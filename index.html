@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulários WEB</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Hello World validação de formularios!</h1>
+                <h4>Valide seus formulários de forma mais eficiente, produtiva e manutenciavel.</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <form action="/enviar.html" name="frm_contato" id="frm_contato" method="post">
+
+                    <div class="mb-3">
+                        <label for="txt_email" class="form-label">Email de contato</label>
+                        <input type="email" class="form-control" id="txt_email" name="txt_email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="txt_mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="txt_mensagem" name="txt_mensagem" rows="3"></textarea>
+                    </div>
+
+                    <div class="md-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/just-validate/dist/just-validate.production.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
