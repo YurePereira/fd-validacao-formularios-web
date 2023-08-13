@@ -5,15 +5,18 @@ let formContatoValidate = new JustValidate(formContato);
 formContatoValidate
     .addField('#txt_email', [
         {
-            rule: 'required'
+            rule: 'required',
+            errorMessage: 'Esse campo é obrigatório!',
         },
         {
-            rule: 'email'
+            rule: 'email',
+            errorMessage: 'Esse campo deve conter um email válido!',
         }
     ])
     .addField('#txt_mensagem', [
         {
-            rule: 'required'
+            rule: 'required',
+            errorMessage: 'Esse campo é obrigatório!',
         }
     ])
     .onSuccess(function(event) {
